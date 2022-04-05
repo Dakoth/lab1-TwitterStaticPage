@@ -1,0 +1,94 @@
+/* Feel free to edit CSS of body if you'd like. We provide you the light gray background color and font family in the body styling */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #e6ecf0;
+}
+
+/*
+.twitter {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  object-fit: cover;
+}
+*/
+
+#twitter {
+  flex-basis: 20%;
+  font-size: 0;
+  transform: translateX(50%);
+  /*left: 50%;*/
+}
+
+#twitter img {
+  width: 12%;
+}
+
+.navbar-custom {
+  height: 46px;
+  z-index: 100;
+}
+
+.tweetButton {
+  background-color: #49b3f4;
+  padding: 10px 10px;
+  border-radius: 5px;
+  right: 0;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#general-wrapper {
+  max-width: 1190px;
+  margin: 56px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#content-wrapper {
+  /* max-width: 1190px; */
+  /* margin: 56px auto; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* margin-top: 50px; */
+}
+
+/* stuff involving left shit*/
+
+#left {
+  background-color: aqua;
+  width: 290px;
+}
+
+#cover-picture img {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 1;
+}
+
+#profile-stats {
+  background-color: #e6ecf0;
+}
+
+/*center stuff */
+
+#main {
+  background-color: orchid;
+  width: 100%;
+}
+
+#right {
+  background-color: greenyellow;
+  width: 290px;
+}
+
+/* TODO: Create CSS for your Twitter Mockup */
