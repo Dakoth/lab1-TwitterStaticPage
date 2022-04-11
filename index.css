@@ -5,90 +5,207 @@ body {
   background-color: #e6ecf0;
 }
 
-/*
-.twitter {
-  width: 50px;
-  height: 40px;
-  display: flex;
-  object-fit: cover;
-}
-*/
-
-#twitter {
-  flex-basis: 20%;
-  font-size: 0;
-  transform: translateX(50%);
-  /*left: 50%;*/
-}
-
-#twitter img {
-  width: 12%;
-}
-
-.navbar-custom {
-  height: 46px;
-  z-index: 100;
-}
-
-.tweetButton {
-  background-color: #49b3f4;
-  padding: 10px 10px;
-  border-radius: 5px;
-  right: 0;
-}
-
-#header {
+header {
   position: fixed;
   top: 0;
+  right: 0;
   left: 0;
   z-index: 100;
-}
-
-#general-wrapper {
-  max-width: 1190px;
-  margin: 56px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-#content-wrapper {
-  /* max-width: 1190px; */
-  /* margin: 56px auto; */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  /* margin-top: 50px; */
-}
-
-/* stuff involving left shit*/
-
-#left {
-  background-color: aqua;
-  width: 290px;
-}
-
-#cover-picture img {
-  max-width: 100%;
-  max-height: 100%;
-  z-index: 1;
-}
-
-#profile-stats {
-  background-color: #e6ecf0;
-}
-
-/*center stuff */
-
-#main {
-  background-color: orchid;
+  height: 46px;
   width: 100%;
 }
 
-#right {
-  background-color: greenyellow;
-  width: 290px;
+@media only screen and (max-width: 1200px) {
+  #content-right {
+    display: none;
+  }
 }
 
-/* TODO: Create CSS for your Twitter Mockup */
+#content-wrapper {
+  max-width: 1190px;
+  margin: 56px auto;
+  padding: 10px;
+}
+
+.leftNav {
+  width: 50%;
+}
+
+.navbar {
+  padding-bottom: 0px;
+  align-items: center;
+}
+
+.navbarHeaders {
+  margin-left: 20px;
+}
+
+.nav-link {
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+
+.navbar-brand {
+  padding-bottom: 15px;
+}
+
+a.nav-link:hover {
+  color: #4ab3f4 !important;
+  border-bottom: 2px solid #4ab3f4 !important;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#twitterLogo {
+  width: 27px;
+}
+
+.headerRight {
+  float: right;
+  margin-right: 20px;
+  padding-bottom: 7px;
+}
+
+h5 {
+  font-weight: 900;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+#profile {
+  width: 75px;
+  height: 75px;
+  border: 2px solid white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#content-left {
+  max-width: 290px;
+  display: flex;
+  flex-direction: column;
+  max-height: 250px;
+  margin-right: 10px;
+}
+
+.banner {
+  width: 100%;
+  background-color: black;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  /* border-top: 25px solid black;
+  border-bottom: 25px solid black; */
+  /* border-right: 45px solid black;
+  border-left: 45px solid black; */
+  width: 200px;
+  margin-right: 45px;
+  margin-left: 45px;
+}
+
+#contentCenter {
+  max-width: 560px;
+}
+
+#content-right {
+  max-width: 290px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-height: 270px;
+}
+
+#profileImgAndName {
+  z-index: 3;
+  max-height: 80px;
+  margin-top: -24px;
+}
+
+#profileDetails {
+  margin-top: 20px;
+}
+
+.profileName {
+  margin-bottom: -5px;
+  margin-top: 10px;
+}
+
+#statsBox {
+  width: inherit;
+  justify-content: space-evenly;
+  font-size: medium;
+  padding-top: 10px;
+}
+
+.statTitle {
+  color: #67757f;
+  font-weight: 850;
+}
+
+.statNum {
+  color: #58b9f4;
+  font-weight: bold;
+}
+
+.tweet {
+  border-bottom: 1px solid #e6ecf0;
+  min-height: 50px;
+  padding: 20px 20px 0px 20px;
+}
+
+.tweetUserInfo {
+  color: gray;
+  margin-left: 6px;
+}
+
+.nextToProfilePic {
+  margin-left: 10px;
+}
+
+.twoLine p {
+  margin-bottom: 0px;
+}
+
+.whoToFollowText p {
+  margin-bottom: 10px;
+}
+
+.whoToFollow {
+  border-bottom: 1px solid #e6ecf0;
+  min-height: 45px;
+  padding: 10px 10px 10px 10px;
+  /* width: 100%; */
+  width: 290px;
+}
+/* hardcode widths of left and right columns */
+
+button {
+  border-radius: 30px;
+  padding-left: 19px;
+  padding-right: 19px;
+  color: #4ab3f4;
+  border: 1px solid #4ab3f4;
+  max-width: 100px;
+}
+
+.tweetButton {
+  background-color: #4ab3f4;
+  color: white;
+  font-weight: bold;
+  right: 0;
+}
+
+.skip {
+  display: none;
+} /* for navigation */
