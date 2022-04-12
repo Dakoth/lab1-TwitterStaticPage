@@ -45,7 +45,7 @@ header {
 
 a.nav-link:hover {
   color: #4ab3f4 !important;
-  border-bottom: 2px solid #4ab3f4 !important;
+  border-bottom: 5px solid #4ab3f4 !important;
 }
 
 .navbar-expand .navbar-nav .nav-link {
@@ -108,7 +108,7 @@ h5 {
   margin-left: 45px;
 }
 
-#contentCenter {
+#content-center {
   max-width: 560px;
 }
 
@@ -141,19 +141,19 @@ h5 {
   margin-top: 10px;
 }
 
-#statsBox {
+#profileStatsBox {
   width: inherit;
   justify-content: space-evenly;
   font-size: medium;
   padding-top: 10px;
 }
 
-.statTitle {
+.profileStatTitle {
   color: #67757f;
   font-weight: 850;
 }
 
-.statNum {
+.profileStatNum {
   color: #58b9f4;
   font-weight: bold;
 }
