@@ -30,7 +30,7 @@ header {
   align-items: center;
 }
 
-.navbarHeaders {
+.navbarHeader {
   margin-left: 20px;
 }
 
@@ -99,10 +99,6 @@ h5 {
 }
 
 .banner img {
-  /* border-top: 25px solid black;
-  border-bottom: 25px solid black; */
-  /* border-right: 45px solid black;
-  border-left: 45px solid black; */
   width: 200px;
   margin-right: 45px;
   margin-left: 45px;
@@ -126,7 +122,7 @@ h5 {
   }
 }
 
-#profileImgAndName {
+#profileBlock {
   z-index: 3;
   max-height: 80px;
   margin-top: -24px;
@@ -155,7 +151,7 @@ h5 {
 
 .profileStatNum {
   color: #58b9f4;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .tweet {
@@ -184,11 +180,9 @@ h5 {
 .whoToFollow {
   border-bottom: 1px solid #e6ecf0;
   min-height: 45px;
-  padding: 10px 10px 10px 10px;
-  /* width: 100%; */
+  padding: 10px;
   width: 290px;
 }
-/* hardcode widths of left and right columns */
 
 button {
   border-radius: 30px;
